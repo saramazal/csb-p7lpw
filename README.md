@@ -1,4 +1,4 @@
-# codecandbox-mazal-landing-page
+# codesandbox-mazal-landing-page
 
 ## Deployment projects from
 * [codesandbox](https://codesandbox.io/s/cool-marco-p7lpw?file=/index.html) to:
