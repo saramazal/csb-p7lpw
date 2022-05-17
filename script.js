@@ -6,13 +6,13 @@ window.onload = function () {
 
 var particles = Particles.init({
   selector: ".background",
-  color: ["#9D00FF", "#00ffff"],
+  color: ["#FF0099", "#00ffff"],
   connectParticles: true,
   responsive: [
     {
       breakpoint: 765,
       options: {
-        color: ["#9D00FF", "#FF0099", "#ffffff"],
+        color: ["#fFF", "#FF0099", "#00ffff"],
         maxParticles: 43,
         connectParticles: false
       }
@@ -29,13 +29,13 @@ Number.prototype.pad = function (n) {
 
 function updateClock() {
   var now = new Date();
-  var milli = now.getMilliseconds(),
+  var millisec = now.getMilliseconds(),
     sec = now.getSeconds(),
     min = now.getMinutes(),
-    hou = now.getHours(),
-    mo = now.getMonth(),
-    dy = now.getDate(),
-    yr = now.getFullYear();
+    hour = now.getHours(),
+    month = now.getMonth(),
+    day = now.getDate(),
+    year = now.getFullYear();
   var months = [
     "January",
     "February",
@@ -50,8 +50,16 @@ function updateClock() {
     "November",
     "December"
   ];
-  var tags = ["mon", "d", "y", "h", "m", "s", "mi"],
-    corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2), milli];
+  const tags = ["month", "day", "year", "hour", "min", "s", "millisec"],
+    corr = [
+      months[month],
+      day,
+      year,
+      hour.pad(2),
+      min.pad(2),
+      sec.pad(2),
+      millisec
+    ];
   for (var i = 0; i < tags.length; i++)
     document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
 }

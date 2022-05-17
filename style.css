@@ -13,6 +13,7 @@ body {
   height: 100vh;
   color: #919191;
   font-family: "Space Mono", monospace;
+  font-size: 16px;
 }
 main {
   height: 90vh;
@@ -35,14 +36,36 @@ h1 {
   padding-top: 30px;
   letter-spacing: 1px;
   font-size: 4vw;
+  transition: transform 0.7s ease;
 }
 h2 {
   color: #00ffff;
   padding-top: 10px;
   letter-spacing: 5px;
   font-size: 3vw;
+  transition: transform 0.7s ease;
 }
-
+h1:hover {
+  color: #ff0099;
+  transform: scale(1.05);
+}
+h2:hover {
+  color: #ff0099;
+  transform: scale(1.03);
+}
+.button {
+  width: 200px;
+  text-align: center;
+  font-size: 1.8vw;
+  padding: 7px 12px;
+  margin-top: 40px;
+  border-radius: 6px;
+  border: 1px solid #00ffff;
+  transition: transform 0.7s ease;
+}
+.button:hover {
+  transform: scale(1.2);
+}
 aside {
   width: 10%;
   display: flex;
@@ -58,6 +81,7 @@ p {
   color: #00ffff;
   text-align: center;
   padding: 20px;
+  font-size: 0.7em;
 }
 
 i {
@@ -202,4 +226,16 @@ a:hover {
   left: 0;
   right: 0;
   z-index: -1;
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .button {
+    font-size: 3vw;
+    width: 180px;
+  }
 }
