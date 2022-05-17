@@ -7,7 +7,7 @@
 * [GithubPages](https://saramazal.github.io/csb-p7lpw/)
 
 ## Screenshot
-* ![codesandbox](https://github.com/saramazal/csb-p7lpw/blob/gh-pages/CodeSandbox.png)
+* ![codesandbox](https://github.com/saramazal/csb-p7lpw/blob/gh-pages/codecandbox.png)
 
 
 
